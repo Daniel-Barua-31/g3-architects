@@ -1,0 +1,424 @@
+
+/* Common */
+
+
+:root {
+    --font-family: "Work Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box; 
+  }
+
+.container{
+    margin-bottom: 130px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.section-title{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    margin: 0px;
+}
+
+.section-passage{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(80, 79, 79);
+    text-align: center;
+}
+
+.primary-button{
+    border: 0;
+    border-radius: 5px;    
+    padding: 10px 24px;
+    color: #fff;
+    background: #FF900E;
+    margin-bottom: 40px;
+    transition: background-color 250ms;
+}
+
+.primary-button:hover,.primary-button:focus-visible,.primary-button:active{
+    border: 2px solid #FF900E;
+    background-color: transparent;
+    color: #FF900E;
+}
+
+
+/* Nav Bar */
+
+header{
+    background-color: #FFF4E7 ;
+    padding: 30px;
+    margin: 0px;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-bar{
+    display: flex;
+    gap: 50px;
+}
+
+.side-bar li {
+    list-style: none;
+}
+
+/* Header */
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF4E7;
+    background-size: cover;
+
+}
+
+.header > * {
+    margin-bottom: 20px;
+}
+
+.description-header > * {
+    margin-bottom: 20px;
+}
+
+.description-header{
+    display: flex;
+    flex-direction: column;
+    width:862px;
+    justify-content: center;
+    align-items: center;
+}
+.header img{
+    border-radius: 8px;
+    width: 900px;
+    padding: 30px;
+
+}
+
+/* Features */
+
+.features{
+    display: flex; 
+    gap:76px;
+}
+
+.features > * {
+    margin-bottom: 45px;
+}
+
+.teams{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px
+}
+
+.f1{
+    font-size: 30px;
+    font-weight: 700px;
+    text-align: left;
+}
+.f2{
+    text-align: left;
+    text-wrap: wrap;
+}
+
+.teams img{
+    width: 300px;
+    height: 300px;
+}
+
+.features-description{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-top: 200px;
+
+}
+
+.features-description > *{
+    margin-bottom: 25px;
+}
+
+.light{
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(107, 107, 107);
+
+}
+
+.bright{
+    font-weight: 700;
+    color: #ff900e;
+}
+
+
+/* Feature, love and enjoy */
+
+
+.feature-architect{
+    display: flex;
+    gap: 140px;
+}
+
+.features-list > * {
+    margin-bottom: 25px;
+}
+
+.features-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.architect img{
+    width: 500px;
+}
+
+.side {
+    border-left: 3px solid #ff900e;
+    padding: 5px;
+}
+
+.features-list > * {
+    margin-bottom: 15px;
+}
+
+.feature-box{
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.feature-box > * {
+    margin-bottom: 15px;
+}
+
+.big-button{
+    background-color: #FF900E;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    width: 250px;
+
+    transition: background-color 250ms;
+
+
+    position:relative;
+
+
+    bottom : 230px;
+    left:  380px;
+}
+
+.big-button:hover,.big-button:focus-visible{
+    background-color: white;
+    border: 2px solid #FF900E;
+    color: #FF900E;
+}
+
+
+#extra{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+.big-button p {
+    text-align: center;
+}
+
+
+
+/* Some face */
+
+.some-fact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.some-fact > * {
+    margin-bottom: 20px;
+}
+
+.box-container{
+    border: 1px solid #ff900e;
+    border-radius: 8px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-container h2{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 35px;
+}
+.box-container p{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    color: rgb(91, 91, 91)       ;
+}
+
+.box-container > * {
+    margin: 10px;
+}
+
+@keyframes box-animation {
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 0 0 50px #ffa743;
+    }
+    
+}
+
+.box-container:hover{
+    animation-name: box-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.fact-box{
+    display: flex;
+    gap: 80px;
+}
+
+
+
+/* Sponspers */
+
+.sponser-icon{
+    display: flex;
+    gap: 120px;
+}
+
+.sponser > * {
+    margin-bottom: 50px;
+}
+
+.details-sponser > * {
+    margin-bottom: 20px;
+}
+
+.sponser-icon img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100px; 
+    
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #FFF4E7;
+    padding: 20px;
+    background-size: cover;
+}
+
+footer p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(87, 86, 86);
+}
+
+/* Mobile Screen */
+
+@media screen and (max-width: 600px) {
+
+
+    /* Nav */
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+    /* Header */
+
+    .description-header{
+        width: 100%;
+    }
+    .header img{
+        width: 100%;
+        padding: 0px;
+    }
+
+    /* Features and team */
+
+    .features{
+        flex-direction: column;
+        gap: 30px;
+        align-items:center;
+    }
+
+    .features-description{
+        padding-top: 30px;
+        align-items: center;
+    }
+    .teams{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* Feature and love and enjoy */
+
+    .feature-architect{
+        flex-direction: column;
+        gap:40px;
+    }
+    .architect img {
+        width: 100%;
+    }
+    .big-button{
+        position: static;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+
+
+    /* Some fact */
+
+    .fact-box{
+        flex-direction: column;
+    }
+
+    /* Sponspors */
+
+
+    .sponser-icon{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+
+}
