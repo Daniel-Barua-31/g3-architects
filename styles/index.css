@@ -488,9 +488,13 @@ footer p{
         gap: 40px;
     }
 
+
+    /* Footer */
+
+    footer p{
+        padding: 20px;
+    }
+
     .hide{
         display: none;
     }
-
-
-}
