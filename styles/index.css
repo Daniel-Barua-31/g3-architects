@@ -13,8 +13,8 @@
 
 .container{
     margin-bottom: 130px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 240px;
+    padding-right: 240px;
 }
 
 .section-title{
@@ -36,7 +36,7 @@
 .primary-button{
     border: 0;
     border-radius: 5px;    
-    padding: 10px 24px;
+    padding: 20px 44px;
     color: #fff;
     background: #FF900E;
     margin-bottom: 40px;
@@ -103,7 +103,7 @@ nav{
 }
 .header img{
     border-radius: 8px;
-    width: 900px;
+    width: 100%;
     padding: 30px;
 
 }
@@ -170,20 +170,21 @@ nav{
 
 .feature-architect{
     display: flex;
-    gap: 140px;
+    gap: 200px;
 }
 
 .features-list > * {
-    margin-bottom: 25px;
+    margin-bottom: 200px;
 }
 
 .features-list{
     display: flex;
     flex-direction: column;
+    gap:20px;
 }
 
 .architect img{
-    width: 500px;
+    width: 525px;
 }
 
 .side {
@@ -197,7 +198,7 @@ nav{
 
 .feature-box{
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -207,10 +208,10 @@ nav{
 
 .big-button{
     background-color: #FF900E;
-    padding: 20px;
+    padding: 50px;
     color: #fff;
     border-radius: 8px;
-    width: 250px;
+    width: 280px;
 
     transition: background-color 250ms;
 
@@ -218,8 +219,8 @@ nav{
     position:relative;
 
 
-    bottom : 230px;
-    left:  380px;
+    bottom : 220px;
+    left:  720px;
 }
 
 .big-button:hover,.big-button:focus-visible{
@@ -244,7 +245,7 @@ nav{
 
 
 
-/* Some face */
+/* Some fact */
 
 .some-fact{
     display: flex;
@@ -301,15 +302,73 @@ nav{
 .fact-box{
     display: flex;
     gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Testimonial */
+
+.testimonials > * {
+    margin-bottom: 30px;
+}
+
+.testimonial-list{
+    display: flex;
+    gap:25px;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+    background-color: rgb(241, 241, 241);
+    padding: 35px;
+    border-radius: 30px;
+    box-sizing: border-box;
+
+}
+
+.testimonial:hover{
+    background-color: #FFF4E7;
+    border: 2px solid #FF900E;
+}
+
+.testimonial > * {
+    margin-bottom: 30px;
+}
+
+.testimonial img{
+    border: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.test-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 
+.test-details blockquote{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+
+}
 
 /* Sponspers */
 
 .sponser-icon{
     display: flex;
     gap: 120px;
+    align-items: center;
+    justify-content: center;
 }
 
 .sponser > * {
@@ -330,11 +389,7 @@ nav{
 
 /* Footer */
 
-footer{
-    background-color: #FFF4E7;
-    padding: 20px;
-    background-size: cover;
-}
+
 
 footer p{
     font-family: var(--font-family);
@@ -342,11 +397,21 @@ footer p{
     font-size: 20px;
     text-align: center;
     color: rgb(87, 86, 86);
+    padding: 38px 420px;
+    background-color: #FFF4E7;
 }
 
 /* Mobile Screen */
 
 @media screen and (max-width: 600px) {
+
+    /* Common */
+
+
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 
     /* Nav */
@@ -404,6 +469,13 @@ footer p{
     /* Some fact */
 
     .fact-box{
+        flex-direction: column;
+    }
+
+
+    /* Testimonial */
+
+    .testimonial-list{
         flex-direction: column;
     }
 
